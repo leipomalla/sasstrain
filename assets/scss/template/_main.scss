@@ -1,0 +1,19 @@
+.main {
+	max-width: 74rem;
+	margin: 8rem auto 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 180px;
+        text-align: center;
+    }
+    &__link {
+       
+        &--first {
+       
+		}
+	}
+}

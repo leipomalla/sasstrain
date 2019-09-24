@@ -1,0 +1,39 @@
+/* ==========================================================================
+ # Button mixins
+========================================================================== */
+
+// basic button styles
+@mixin button {
+  @include button-reset;
+  @include transition;
+  border-radius: 0rem;
+  color: $black;
+  padding: 0 !important;
+  display: inline-block;
+  font-size: .875rem;
+  @include breakpoint($s) {
+    font-size: 1rem;
+  }
+  line-height: 1.25;
+  text-decoration: none;
+  vertical-align: baseline;
+  &:after {
+    position: absolute; /* Prevent underline of arrow */
+    margin-left:8px; /* Add a little space between text and arrow */
+    content: ""; /* Unicode hex for &raquo; */
+    width: 25px;
+    height: 22px;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:$primary;
+  }
+  &:hover, &:focus, &:active {
+    color:$primary;
+  }
+}
+
+// button variaton: big
+@mixin button--big {
+  padding: $gap-medium $gap;
+}
