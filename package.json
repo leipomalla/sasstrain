@@ -25,7 +25,7 @@
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "fitvids": "^2.0.0",
-    "lazysizes": "^4.0.4",
+    "lazysizes": "^5.2.2",
     "objectFitPolyfill": "^2.1.1",
     "svgxuse": "^1.2.6"
   },
